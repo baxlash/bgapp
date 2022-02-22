@@ -10,8 +10,7 @@ services:
             - "${PROJECT_ROOT}:/app:ro"
         networks:
             - app-network
-        depends_on:
-            - db
+    
     db:
         image: baxlash/bgapp-db
         networks:
